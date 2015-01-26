@@ -10,9 +10,9 @@ ssh_options[:keys] = ["/Users/xinghao/aws-ec2/tracename-us.pem"]
 
 set :db_type, "master"
 
-role :app, "ec2-107-20-25-72.compute-1.amazonaws.com"
-role :web, "ec2-107-20-25-72.compute-1.amazonaws.com"
-role :db,  "ec2-107-20-25-72.compute-1.amazonaws.com", :primary => true
+role :app, "54.211.17.78"
+role :web, "54.211.17.78"
+role :db,  "54.211.17.78", :primary => true
 
 set :branch do
   default_tag = `git tag -l #{rails_env}* `.split("\n").last
